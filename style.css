@@ -1,0 +1,188 @@
+/*
+Theme Name: PM Theme
+Theme URI: https://wordpress.org/themes/pm_theme/
+Description: PM Theme boilerplate code
+Author: Tim Reed
+Version: 1
+Tags: Multi-Column, Repsonsive, Bootstrap
+*/
+
+/* --------------------------------------------------------------------- */
+/* Variables                                                             */
+/* --------------------------------------------------------------------- */
+:root {
+	/* Colors */
+	--primary-clr: ;
+	--primary-shade-clr: ;
+	--secondary-clr: ;
+	--secondary-shade-clr: ;
+	--tertiary-clr: ;
+
+	--black-clr: black;
+	--white-clr: white;
+
+	/* Font sizes */
+	--font-100: clamp(24px, 1.5vw, 64px);
+	--font-200: ;
+	--font-300: ;
+	--font-400: ;
+	--font-500: ;
+
+	/* Button hover colors */
+	--primary-hover-clr: ;
+	--secondary-hover-clr: ;
+}
+
+/* --------------------------------------------------------------------- */
+/* Browser resets                                                        */
+/* --------------------------------------------------------------------- */
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+/* --------------------------------------------------------------------- */
+/* Utilities                                                             */
+/* --------------------------------------------------------------------- */
+.btn-theme--1 {
+	color: white;
+	width: 150px;
+	background-color: red;
+
+	&:hover {
+		background-color: lightblue;
+	}
+}
+
+.btn-theme--2 {
+	color: white;
+	width: 150px;
+	background-color: green;
+
+	&:hover {
+		background-color: lightgreen;
+	}
+}
+
+.primary-heading {
+	font-family: '';
+	font-size: var();
+	font-weight: bold;
+}
+
+.secondary-heading {
+	font-family: '';
+	font-size: var();
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: nameOfFont;
+	src: url(fonts/nameOfFont.ttf);
+}
+
+/* --------------------------------------------------------------------- */
+/* Header                                                                */
+/* --------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- */
+/* Navbar                                                                */
+/* --------------------------------------------------------------------- */
+/* 
+CUSTOM NAVBAR TOGGLER
+
+if not needed, remove "custom" from the navbar-toggler and navbar-toggler-icon
+*/
+.custom-navbar-toggler {
+	padding-inline: 12px;
+	height: 40px;
+	width: 56px;
+	border: none;
+	background: transparent;
+}
+
+.custom-navbar-toggler-icon {
+	content: '';
+	margin-inline: auto;
+	display: block;
+	position: relative;
+	height: 3px;
+	width: 100%;
+	background-color: green;
+
+	&:before {
+		content: '';
+		margin-inline: auto;
+		display: block;
+		position: absolute;
+		top: 8px;
+		height: 100%;
+		width: 100%;
+		background-color: blue;
+	}
+
+	&:after {
+		content: '';
+		margin-inline: auto;
+		display: block;
+		position: absolute;
+		top: -8px;
+		height: 100%;
+		width: 100%;
+		background-color: red;
+	}
+}
+/* --------------------------------------------------------------------- */
+/* About | PAGE                                                          */
+/* --------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- */
+/* News | PAGE                                                           */
+/* --------------------------------------------------------------------- */
+#article__news,
+#featured__article {
+	padding: 1rem;
+	border: 4px solid black;
+}
+
+#article__news {
+	margin-bottom: 1rem;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* Stallions | PAGE                                                      */
+/* --------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- */
+/* Contact | PAGE                                                        */
+/* --------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- */
+/* Footer | partial                                                      */
+/* --------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------- */
+/* Media queries                                                         */
+/* --------------------------------------------------------------------- */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
